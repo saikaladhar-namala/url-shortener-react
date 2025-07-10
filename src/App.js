@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/NavBar";
-import UrlManager from "./components/UrlManager"; // Import the new combined component
+import UrlManager from "./components/UrlManager"; 
 
 const App = () => {
   return (
@@ -14,7 +14,6 @@ const App = () => {
           UrlShorty is an efficient and easy-to-use URL shortening service
         </p>
 
-        {/* The new combined component handles all form and table logic */}
         <UrlManager />
       </div>
     </div>

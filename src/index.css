@@ -2,37 +2,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 :root {
-  /* Define CSS variables for colors (now using an orange accent) */
-  --orange-primary: #ff5722; /* A vibrant orange */
-  --orange-dark: #e64a19; /* A darker shade of orange */
-  --black-bg: #1a1a1a; /* Dark background color */
-  --black-card: #2c2c2c; /* Slightly lighter black for cards */
-  --white-text: #f8f9fa; /* Light text color */
-  --gray-text: #adb5bd; /* Gray text for secondary information */
+
+  --orange-primary: #ff5722;
+  --orange-dark: #e64a19;
+  --black-bg: #1a1a1a;
+  --black-card: #2c2c2c;
+  --white-text: #f8f9fa;
+  --gray-text: #adb5bd;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  /* Directly applied dark theme styles */
-  background-color: var(
-    --black-bg
-  ) !important; /* Added !important to ensure it's applied */
+
+  background-color: var(--black-bg) !important;
   color: var(--white-text);
-  transition: background-color 0.3s ease, color 0.3s ease; /* Kept transition for smoothness */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Custom Card Styles */
+
 .custom-card {
-  background-color: var(--black-card) !important; /* Added !important */
-  border: 1px solid var(--orange-dark); /* Changed to orange-dark */
-  border-radius: 20px; /* Increased border-radius for more rounded corners */
+  background-color: var(--black-card) !important;
+  border: 1px solid var(--orange-dark);
+  border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Custom Input Styles */
+
 .custom-input {
   background-color: #3a3a3a;
-  border: 1px solid var(--orange-dark); /* Changed to orange-dark */
+  border: 1px solid var(--orange-dark);
   color: var(--white-text);
   border-radius: 8px;
   padding: 10px 15px;
@@ -45,18 +43,14 @@ body {
 .custom-input:focus {
   background-color: #4a4a4a;
   color: var(--white-text);
-  border-color: var(--orange-primary); /* Changed to orange-primary */
-  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25); /* Adjusted shadow color for orange */
+  border-color: var(--orange-primary);
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25);
 }
 
-/* Bootstrap Overrides for Buttons */
+
 .btn-orange {
-  background-color: var(
-    --orange-primary
-  ) !important; /* Changed to orange-primary */
-  border-color: var(
-    --orange-primary
-  ) !important; /* Changed to orange-primary */
+  background-color: var(--orange-primary) !important;
+  border-color: var(--orange-primary) !important;
   color: var(--white-text);
   border-radius: 8px;
   padding: 10px 20px;
@@ -66,15 +60,15 @@ body {
 }
 
 .btn-orange:hover {
-  background-color: var(--orange-dark) !important; /* Changed to orange-dark */
-  border-color: var(--orange-dark) !important; /* Changed to orange-dark */
+  background-color: var(--orange-dark) !important;
+  border-color: var(--orange-dark) !important;
   color: var(--white-text);
   transform: translateY(-2px);
 }
 
 .btn-outline-orange {
-  color: var(--orange-primary); /* Changed to orange-primary */
-  border-color: var(--orange-primary); /* Changed to orange-primary */
+  color: var(--orange-primary);
+  border-color: var(--orange-primary);
   border-radius: 8px;
   padding: 10px 20px;
   font-weight: 500;
@@ -82,32 +76,28 @@ body {
 }
 
 .btn-outline-orange:hover {
-  background-color: var(--orange-primary); /* Changed to orange-primary */
+  background-color: var(--orange-primary);
   color: var(--white-text);
   transform: translateY(-2px);
 }
 
-/* Text Colors */
+
 .text-orange {
-  color: var(--orange-primary) !important; /* Changed to orange-primary */
+  color: var(--orange-primary) !important;
 }
 
 .text-white-50 {
-  color: var(
-    --white-text
-  ) !important; /* Changed to white-text for better visibility */
+  color: var(--white-text) !important;
 }
 
-/* Ensures text-muted is visible in dark theme */
+
 .text-muted {
-  color: var(
-    --white-text
-  ) !important; /* Changed to white-text for better visibility */
+  color: var(--white-text) !important;
 }
 
-/* App Title and Subtitle */
+
 .app-title {
-  color: var(--orange-primary); /* Changed to orange-primary */
+  color: var(--orange-primary);
   font-weight: 700;
   font-size: 3rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -118,15 +108,15 @@ body {
   font-size: 1.1rem;
 }
 
-/* Table Styles */
+
 .custom-table {
-  background-color: var(--black-card) !important; /* Added !important */
-  border-radius: 20px; /* Increased border-radius for more rounded corners */
-  overflow: hidden; /* Ensures rounded corners apply to table content */
+  background-color: var(--black-card) !important;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .custom-table thead th {
-  background-color: var(--orange-dark); /* Changed to orange-dark */
+  background-color: var(--orange-dark);
   color: var(--white-text);
   border-bottom: none;
   padding: 15px;
@@ -147,15 +137,13 @@ body {
 }
 
 .original-link-text {
-  /* Truncate long URLs */
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 300px; /* Adjust as needed */
+  max-width: 300px;
 }
 
-/* Form Checkbox Styling */
 .form-check-input {
   background-color: #555 !important;
   border: 1px solid #888 !important;
@@ -165,22 +153,16 @@ body {
 }
 
 .form-check-input:checked {
-  background-color: var(
-    --orange-primary
-  ) !important; /* Changed to orange-primary */
-  border-color: var(
-    --orange-primary
-  ) !important; /* Changed to orange-primary */
+  background-color: var(--orange-primary) !important;
+  border-color: var(--orange-primary) !important;
 }
 
 .form-check-input:focus {
-  border-color: var(
-    --orange-primary
-  ) !important; /* Changed to orange-primary */
-  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25) !important; /* Adjusted shadow color for orange */
+  border-color: var(--orange-primary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25) !important;
 }
 
-/* Alert styles */
+
 .alert-success {
   background-color: #28a745;
   color: var(--white-text);
