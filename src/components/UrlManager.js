@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import ExpiredUrlPage from "./ExpiredUrlPage";
+import { API_BASE_URL, REDIRECT_BASE_URL } from "../config/apiConfig";
 
 function UrlManager() {
   const [shortenedUrls, setShortenedUrls] = useState([]);
@@ -11,8 +12,6 @@ function UrlManager() {
   const [showExpiredPage, setShowExpiredPage] = useState(false);
   const [clickedExpiredUrl, setClickedExpiredUrl] = useState(null);
 
-  const API_BASE_URL = "http://localhost:8919/api/v1/url";
-  const REDIRECT_BASE_URL = "http://localhost:8919";
 
   const fetchAllUrls = async () => {
     try {
