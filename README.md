@@ -1,3 +1,5 @@
+<img width="1493" height="782" alt="url-expire" src="https://github.com/user-attachments/assets/bae71764-ec72-41e2-bf83-8308237e412f" />
+<img width="1536" height="778" alt="short-url-demo" src="https://github.com/user-attachments/assets/6594fec0-16e0-47e8-a6b1-fa894842169d" />
 # URL Shortener - React UI
 
 This is the **frontend** for the URL Shortener Application built with React. It interacts with a Spring Boot backend to generate and manage short links.
