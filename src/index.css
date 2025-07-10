@@ -1,13 +1,194 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Import Google Fonts - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Define CSS variables for colors (now using an orange accent) */
+  --orange-primary: #ff5722; /* A vibrant orange */
+  --orange-dark: #e64a19; /* A darker shade of orange */
+  --black-bg: #1a1a1a; /* Dark background color */
+  --black-card: #2c2c2c; /* Slightly lighter black for cards */
+  --white-text: #f8f9fa; /* Light text color */
+  --gray-text: #adb5bd; /* Gray text for secondary information */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Inter", sans-serif;
+  /* Directly applied dark theme styles */
+  background-color: var(
+    --black-bg
+  ) !important; /* Added !important to ensure it's applied */
+  color: var(--white-text);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Kept transition for smoothness */
+}
+
+/* Custom Card Styles */
+.custom-card {
+  background-color: var(--black-card) !important; /* Added !important */
+  border: 1px solid var(--orange-dark); /* Changed to orange-dark */
+  border-radius: 20px; /* Increased border-radius for more rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Input Styles */
+.custom-input {
+  background-color: #3a3a3a;
+  border: 1px solid var(--orange-dark); /* Changed to orange-dark */
+  color: var(--white-text);
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.custom-input::placeholder {
+  color: var(--gray-text);
+}
+
+.custom-input:focus {
+  background-color: #4a4a4a;
+  color: var(--white-text);
+  border-color: var(--orange-primary); /* Changed to orange-primary */
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25); /* Adjusted shadow color for orange */
+}
+
+/* Bootstrap Overrides for Buttons */
+.btn-orange {
+  background-color: var(
+    --orange-primary
+  ) !important; /* Changed to orange-primary */
+  border-color: var(
+    --orange-primary
+  ) !important; /* Changed to orange-primary */
+  color: var(--white-text);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-orange:hover {
+  background-color: var(--orange-dark) !important; /* Changed to orange-dark */
+  border-color: var(--orange-dark) !important; /* Changed to orange-dark */
+  color: var(--white-text);
+  transform: translateY(-2px);
+}
+
+.btn-outline-orange {
+  color: var(--orange-primary); /* Changed to orange-primary */
+  border-color: var(--orange-primary); /* Changed to orange-primary */
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-orange:hover {
+  background-color: var(--orange-primary); /* Changed to orange-primary */
+  color: var(--white-text);
+  transform: translateY(-2px);
+}
+
+/* Text Colors */
+.text-orange {
+  color: var(--orange-primary) !important; /* Changed to orange-primary */
+}
+
+.text-white-50 {
+  color: var(
+    --white-text
+  ) !important; /* Changed to white-text for better visibility */
+}
+
+/* Ensures text-muted is visible in dark theme */
+.text-muted {
+  color: var(
+    --white-text
+  ) !important; /* Changed to white-text for better visibility */
+}
+
+/* App Title and Subtitle */
+.app-title {
+  color: var(--orange-primary); /* Changed to orange-primary */
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.app-subtitle {
+  color: var(--gray-text);
+  font-size: 1.1rem;
+}
+
+/* Table Styles */
+.custom-table {
+  background-color: var(--black-card) !important; /* Added !important */
+  border-radius: 20px; /* Increased border-radius for more rounded corners */
+  overflow: hidden; /* Ensures rounded corners apply to table content */
+}
+
+.custom-table thead th {
+  background-color: var(--orange-dark); /* Changed to orange-dark */
+  color: var(--white-text);
+  border-bottom: none;
+  padding: 15px;
+}
+
+.custom-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.custom-table tbody td {
+  color: var(--white-text);
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.original-link-text {
+  /* Truncate long URLs */
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px; /* Adjust as needed */
+}
+
+/* Form Checkbox Styling */
+.form-check-input {
+  background-color: #555 !important;
+  border: 1px solid #888 !important;
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: 0.25em;
+}
+
+.form-check-input:checked {
+  background-color: var(
+    --orange-primary
+  ) !important; /* Changed to orange-primary */
+  border-color: var(
+    --orange-primary
+  ) !important; /* Changed to orange-primary */
+}
+
+.form-check-input:focus {
+  border-color: var(
+    --orange-primary
+  ) !important; /* Changed to orange-primary */
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25) !important; /* Adjusted shadow color for orange */
+}
+
+/* Alert styles */
+.alert-success {
+  background-color: #28a745;
+  color: var(--white-text);
+  border-color: #28a745;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: var(--white-text);
+  border-color: #dc3545;
 }

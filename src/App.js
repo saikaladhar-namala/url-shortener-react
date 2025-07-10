@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/NavBar";
+import UrlManager from "./components/UrlManager"; // Import the new combined component
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <Navbar />
+      <div className="container mt-5">
+        <h1 className="text-center mb-4 app-title">
+          Shorten Your Looooong Links :)
+        </h1>
+        <p className="text-center mb-5 app-subtitle">
+          UrlShorty is an efficient and easy-to-use URL shortening service
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        {/* The new combined component handles all form and table logic */}
+        <UrlManager />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
