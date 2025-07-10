@@ -39,5 +39,11 @@ npm install
 npm start
 ```
 
-App will run at: [http://localhost:3000](http://localhost:3000)
+By default, the app will run on:
+
+http://localhost:3000
+
+If port 3000 is already in use, React will automatically ask to run on the next available port, such as:
+
+http://localhost:3001
 <img width="1508" height="806" alt="success-shortcode" src="https://github.com/user-attachments/assets/231b0682-5fa0-46d7-b530-75a6b8745cef" />
