@@ -40,15 +40,4 @@ npm start
 ```
 
 App will run at: [http://localhost:3000](http://localhost:3000)
-
----
-
-## 📸 Screenshots
-
-You can embed images like this:
-
-```md
-![Screenshot](./screenshots/url-list.png)
-```
-
-> 💡 Place your `.png` files inside a `screenshots/` folder inside your project root.
+<img width="1508" height="806" alt="success-shortcode" src="https://github.com/user-attachments/assets/231b0682-5fa0-46d7-b530-75a6b8745cef" />
