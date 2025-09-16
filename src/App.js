@@ -18,7 +18,6 @@ const App = () => {
           <p className="text-center mb-5 app-subtitle">
             UrlShorty is an efficient and easy-to-use URL shortening service
           </p>
-
           <Routes>
             <Route path="/" element={<UrlManager />} />
             <Route path="/expired" element={<ExpiredUrlPage />} />
